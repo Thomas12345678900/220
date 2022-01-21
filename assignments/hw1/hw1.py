@@ -25,8 +25,8 @@ def calc_volume():
 def shooting_percentage():
     total_shot = eval(input("Enter the player's total shots: "))
     made_shot = eval(input("Enter the player's shots made: "))
-    shooting_percentage = ((made_shot)/(total_shot)) * 100
-    print("The player's shooting percentage is ", shooting_percentage)
+    shots_made_percentage = ((made_shot)/(total_shot)) * 100
+    print("The player's shooting percentage is ", shots_made_percentage)
 
 
 def coffee():
