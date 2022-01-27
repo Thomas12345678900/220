@@ -1,35 +1,52 @@
 """
-Name: <your name goes here – first and last>
-<ProgramName>.py
+Name: Thomas Scola
+hw2.py
 
-Problem: <Brief, one or two sentence description of the problem that this program solves, in your own words.>
+Problem: To implement loops and calculations in our code
 
 Certification of Authenticity:
-<include one of the following>
 I certify that this assignment is entirely my own work.
-I certify that this assignment is my own work, but I discussed it with: <Name(s)>
 """
 import math
 
-
 def sum_of_threes():
-    pass
+    sum_total = 0
+    upper_bound = eval(input("what is the upper bound? "))
+    for i in range(0, upper_bound + 1, 3):
+        sum_total = sum_total + i
+    print("sum of threes is", sum_total)
 
 
 def multiplication_table():
-    pass
+    for i in range(1, 11):
+        for j in range(1, 11):
+            print(i * j, end="\t")
+        print()
 
 
 def triangle_area():
-    pass
-
+    length_a = eval(input("Enter the length of side a: "))
+    length_b = eval(input("Enter the length of side b: "))
+    length_c = eval(input("Enter the length of side c: "))
+    side = (length_a + length_b + length_c) / 2
+    area_squared = side * (side - length_a) * (side - length_b) * (side - length_c)
+    area = math.sqrt(area_squared)
+    print("The area is: ", area)
 
 def sum_squares():
-    pass
+    square_sum = 0
+    lower_range = eval(input("Enter the lower range: "))
+    upper_range = eval(input("Enter the upper range: "))
+    for i in range(lower_range, upper_range + 1):
+        square_sum = square_sum + (i**2)
+    print(square_sum)
 
 
 def power():
-    pass
+    base = eval(input("Enter the base: "))
+    exponent = eval(input("Enter the exponent: "))
+    result = base ** exponent
+    print(exponent, "^", base, "=", result)
 
 
 if __name__ == '__main__':
