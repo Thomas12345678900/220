@@ -38,15 +38,18 @@ def sum_squares():
     lower_range = eval(input("Enter the lower range: "))
     upper_range = eval(input("Enter the upper range: "))
     for i in range(lower_range, upper_range + 1):
-        square_sum = square_sum + (i**2)
+        square_sum = square_sum + (i*i)
     print(square_sum)
 
 
 def power():
     base = eval(input("Enter the base: "))
     exponent = eval(input("Enter the exponent: "))
-    result = base ** exponent
-    print(exponent, "^", base, "=", result)
+    product = 1
+    for i in range(exponent):
+        product = product * base
+
+    print(exponent, "^",base, "=",product)
 
 
 if __name__ == '__main__':
