@@ -122,7 +122,9 @@ def process_string():
     last_letter = stringg[-1]
     two_five = stringg[2:5+1]
     concat = first_letter + last_letter
-    first_three = stringg[0:2] * 10
+    first_three = stringg[0:3] * 10
+    for characters in stringg:
+        print(characters)
     lens_x = len(stringg)
     print(first_letter)
     print(last_letter)
@@ -136,18 +138,19 @@ def process_list():
     values = [5, "hi", 2.5, "there", pt, 7.2]
     hi_there = values[1] + values[3]
     result = values[0] + values[2]
-    hi_ten = values[1] *10
+    hi_five = values[1] * 5
     list_1 = [values[2], values[3], values[4]]
     list_2 = [values[2], values[3], values[1]]
     list_3 = [values[0], values[2], values[5]]
     result_2 = values[0] + values[2] + values[5]
     print(hi_there)
     print(result)
-    print(hi_ten)
+    print(hi_five)
     print(list_1)
     print(list_2)
     print(list_3)
     print(result_2)
+    print(len(values))
     # str() int() float()
 process_list()
 
